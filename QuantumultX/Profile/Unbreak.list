@@ -1,0 +1,41 @@
+# Unbreak
+# > General
+USER-AGENT,archero*,Domestic
+USER-AGENT,coffeecorp*,Domestic
+USER-AGENT,Coffee%20Corp*,Domestic
+USER-AGENT,restaurant-mobile*,Domestic
+DOMAIN,app.adjust.com,Domestic
+DOMAIN,bdtj.tagtic.cn,Domestic
+# > Alibaba
+DOMAIN,log.mmstat.com,Domestic
+DOMAIN,sycm.mmstat.com,Domestic
+# > Google
+DOMAIN-SUFFIX,blog.google,Domestic
+DOMAIN-SUFFIX,googletraveladservices.com,Domestic
+DOMAIN,clientservices.googleapis.com,Domestic
+DOMAIN,dl.google.com,Domestic
+DOMAIN,dl.l.google.com,Domestic
+DOMAIN,update.googleapis.com,Domestic
+DOMAIN,translate.googleapis.com,Overseas
+# >> Google Fonts API
+DOMAIN,fonts.googleapis.com,Domestic
+DOMAIN,fonts.gstatic.com,Domestic
+# >> Firebase Cloud Messaging
+DOMAIN,mtalk.google.com,Domestic
+DOMAIN,alt1-mtalk.google.com,Domestic
+DOMAIN,alt2-mtalk.google.com,Domestic
+DOMAIN,alt3-mtalk.google.com,Domestic
+DOMAIN,alt4-mtalk.google.com,Domestic
+DOMAIN,alt5-mtalk.google.com,Domestic
+DOMAIN,alt6-mtalk.google.com,Domestic
+DOMAIN,alt7-mtalk.google.com,Domestic
+DOMAIN,alt8-mtalk.google.com,Domestic
+# > Tencent
+DOMAIN,fairplay.l.qq.com,Domestic
+DOMAIN,livew.l.qq.com,Domestic
+DOMAIN,vd.l.qq.com,Domestic
+# > Strava
+DOMAIN,analytics.strava.com,Domestic
+# > Umeng
+DOMAIN,msg.umeng.com,Domestic
+DOMAIN,msg.umengcloud.com,Domestic
