@@ -1,0 +1,9 @@
+#!name=Unlock Wechat URL
+#!desc=在微信中打开淘宝等被屏蔽链接，点击 Surge通知跳转到 Safari 或淘宝 App微信
+
+
+[Script]
+解锁微信第三方跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js,script-update-interval=0
+
+[MITM]
+hostname= %APPEND% weixin110.qq.com
