@@ -40,8 +40,6 @@ URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash,REJE
 ^https?:\/\/app-api\.smzdm\.com\/util\/loading - reject
 
 [Script]
-
-
 #知乎去广告
 知乎人物推荐去广告 = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/people/, script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
 知乎开屏去广告 = type=http-response, requires-body=1, max-size=0, pattern=https://api.zhihu.com/moments/recommend, script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
