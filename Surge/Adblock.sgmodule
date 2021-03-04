@@ -1,5 +1,5 @@
 #!name=ADBlock
-#!desc=知乎/Bilibili/微信公众号/什么值得买/Youtube 测试去广告
+#!desc=知乎/Bilibili/微信公众号/什么值得买/Youtube 去广告
 
 [Rule]
 #知乎去广告
@@ -9,7 +9,7 @@ URL-REGEX,https://api.zhihu.com/(ab|adx|drama|fringe|zst|commercial|ad-style-ser
 AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com)))),REJECT-TINYGIF
 
 #Bilibili去广告
-#DOMAIN-SUFFIX,cm.bilibili.com,REJECT
+DOMAIN-SUFFIX,cm.bilibili.com,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
 # 可能的一些推广(beta)
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
