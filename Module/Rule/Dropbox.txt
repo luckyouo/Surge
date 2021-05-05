@@ -1,4 +1,0 @@
-.dropboxapi.com
-.dropboxstatic.com
-.dropbox.com
-.api.userleap.com
