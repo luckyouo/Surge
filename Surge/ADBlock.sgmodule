@@ -1,6 +1,10 @@
 #!name=ADBlock
 #!desc=知乎/Bilibili/微信公众号/什么值得买/Youtube 去广告
 
+[MITM]
+hostname = %APPEND% *.googlevideo.com, api.zhihu.com, www.zhihu.com, app.bilibili.com,api.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, mp.weixin.qq.com, homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com
+
+
 [Rule]
 #知乎去广告
 USER-AGENT,AVOS*,REJECT-TINYGIF
@@ -62,7 +66,3 @@ BiliBili_我的页面处理 = type=http-response,requires-body=1,max-size=0,patt
 什么值得买_好价去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/haojia-api\.smzdm\.com\/home\/list\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 什么值得买_好文去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/article-api\.smzdm\.com\/article\/index_home_page,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 什么值得买_搜索去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-
-
-[MITM]
-hostname = %APPEND% *.googlevideo.com, api.zhihu.com, www.zhihu.com, app.bilibili.com,api.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, mp.weixin.qq.com, homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com
