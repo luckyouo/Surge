@@ -1,5 +1,5 @@
-#!name=Termius
-#!desc=Unlock Termius VIP
+#!name=Unlock Termius
+#!desc=Termius VIP解锁
 
 [MITM]
 hostname = %APPEND% api.termius.com
