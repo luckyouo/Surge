@@ -1,4 +1,4 @@
-#!name=DNSPod DoH
+#!name=DoH DNSPod
 #!desc=Enable DNS over HTTPS (DoH) with DNSPod Public DNS.
 
 [General]
