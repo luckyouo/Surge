@@ -1,0 +1,12 @@
+#!name=TikTok_JP
+#!desc=Unlock JP TikTok
+
+
+[URL Rewrite]
+^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? - reject
+(?<=_region=)CN(?=&) JP 307
+(?<=&app_version=)1[6-9]..(?=.?.?&) 100. 307
+(?<=\?version_code=)1[6-9]..(?=.?.?&) 100. 307
+
+[Mitm]
+hostname = %INSERT% *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
