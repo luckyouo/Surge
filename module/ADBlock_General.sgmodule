@@ -38,10 +38,7 @@ URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash,REJE
 # BiliBili漫画去广告
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash - reject
 
-#什么值得买去广告
-^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/banner - reject
-^https?:\/\/api\.smzdm\.com\/v\d\/util\/(banner|loading) - reject
-^https?:\/\/app-api\.smzdm\.com\/util\/loading - reject
+
 
 [Script]
 #知乎去广告
@@ -61,8 +58,8 @@ BiliBili_我的页面处理 = type=http-response,requires-body=1,max-size=0,patt
 
 微信公众号去广告= type=http-response ,requires-body=1,max-size=0, pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
-什么值得买_首页去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/homepage-api\.smzdm\.com\/home,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什么值得买_去浮动广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app-api\.smzdm\.com\/util\/update,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什么值得买_好价去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/haojia-api\.smzdm\.com\/home\/list\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什么值得买_好文去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/article-api\.smzdm\.com\/article\/index_home_page,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什么值得买_搜索去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+
+
+
+
+
