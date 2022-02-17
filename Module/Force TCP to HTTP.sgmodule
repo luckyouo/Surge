@@ -1,5 +1,0 @@
-#!name=Force TCP to HTTP
-#!desc=将tcp强制处理成http
-
-[General]
-force-http-engine-hosts = %INSERT% *
