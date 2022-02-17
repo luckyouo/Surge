@@ -1,0 +1,14 @@
+#!name=Price Module
+#!desc=京东淘宝比价内置版
+
+
+[Script]
+jd_price.js = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/fate96/Surge/master/jd/jd_price_lite.js
+
+tb_price.js = type=http-request,requires-body=1,pattern=^http://.+/amdc/mobileDispatch,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js
+
+tb_price.js = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js
+
+[MITM]
+hostname = %APPEND% trade-acs.m.taobao.com, api.m.jd.com
+

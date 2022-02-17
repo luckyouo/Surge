@@ -1,0 +1,9 @@
+#!name=Unblock Color Weather vip
+#!desc=彩云天气Vip解锁
+
+
+[Script]
+^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js
+
+[MITM]
+hostname = %APPEND% biz.caiyunapp.com

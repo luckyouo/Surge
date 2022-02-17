@@ -1,0 +1,8 @@
+#!name=Cancel JD Vip
+#!desc=取消绑定京东店铺会员
+
+[MITM]
+hostname = %APPEND% shopmember.m.jd.com
+
+[URL Rewrite]
+^https:\/\/shopmember\.m\.jd\.com\/shopcard\/\?(venderId=[0-9]+).* https:\/\/shopmember\.m\.jd\.com\/member\/memberCloseAccount\?$1 302
